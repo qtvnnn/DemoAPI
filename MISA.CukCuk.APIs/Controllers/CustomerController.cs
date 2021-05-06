@@ -1,7 +1,8 @@
 ﻿using Dapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using MISA.CukCuk.api.Model;
+using MISA.Core.Entities;
+using MISA.Core.Interfaces;
 using MISA.CukCuk.APIs.Controllers;
 using MISA.CukCuk.APIs.Extensions;
 using MySqlConnector;
@@ -15,6 +16,9 @@ namespace MISA.CukCuk.api.Controller
 {
     public class CustomerController : BaseEntityController<Customer>
     {
+        public CustomerController(IBaseService<Customer> baseService) : base(baseService)
+        {
+        }
 
         [HttpPut("{customerId}")]
         public IActionResult Put(Customer customer, Guid customerId)
@@ -28,7 +32,7 @@ namespace MISA.CukCuk.api.Controller
             if (customerExistCode.Count() > 0)
             {
                 return BadRequest("Mã khách hàng không được phép trùng");
-            }
+            }   
             customer.CustomerId = customerId;
             //Thực hiện lấy dữ liệu từ DB
             var storeName = "Proc_UpdateCustomer";

@@ -1,6 +1,7 @@
 ﻿using Dapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using MISA.Core.Interfaces;
 using MySqlConnector;
 using System;
 using System.Collections.Generic;
@@ -17,9 +18,11 @@ namespace MISA.CukCuk.APIs.Controllers
         protected string _tableName = string.Empty;
         protected string _connectionString = "Host=47.241.69.179; Port=3306; User Id= dev; Password=12345678; Database= MF0_NVManh_CukCuk02";
         protected IDbConnection _dbConnection;
+        IBaseService<T> _baseService;
 
-        public BaseEntityController()
+        public BaseEntityController(IBaseService<T> baseService)
         {
+            _baseService = baseService;
             _tableName = typeof(T).Name;
             _dbConnection = new MySqlConnection(_connectionString);
         }
@@ -31,10 +34,7 @@ namespace MISA.CukCuk.APIs.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-
-            //Thực hiện lấy dữ liệu từ DB
-            var entities = _dbConnection.Query<T>($"Proc_Get{_tableName}s", commandType: CommandType.StoredProcedure);
-
+            var entities = _baseService.Get();
             if (entities.Count() == 0)
             {
                 return StatusCode(204, entities);

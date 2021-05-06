@@ -6,7 +6,43 @@ using System.Threading.Tasks;
 
 namespace MISA.Core.Interfaces
 {
-    public interface IBaseService
+    /// <summary>
+    /// Base Service
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    public interface IBaseService<T>
     {
+        /// <summary>
+        /// Lấy toàn bộ dữ liệu trong db
+        /// </summary>
+        /// <returns>Danh sách đối tượng</returns>
+        /// CreatedBy: NNNANG (06/05/21)
+        IEnumerable<T> Get();
+        /// <summary>
+        /// Lấy thông tin một đối tượng theo id
+        /// </summary>
+        /// <param name="entityId">Id của đối tượng</param>
+        /// <returns>đối tượng có id tương ứng</returns>
+        /// CreatedBy: NNNANG (06/05/21)
+        T GetById(Guid entityId);
+        /// <summary>
+        /// Thêm mới
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <returns></returns>
+        int Insert(T entity);
+        /// <summary>
+        /// Cập nhật
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <param name="entityId"></param>
+        /// <returns></returns>
+        int Update(T entity, Guid entityId);
+        /// <summary>
+        /// Xóa
+        /// </summary>
+        /// <param name="entityId"></param>
+        /// <returns></returns>
+        int Delete(Guid entityId);
     }
 }
