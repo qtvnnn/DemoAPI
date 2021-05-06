@@ -1,0 +1,12 @@
+E:\nnnang\api\MISA.CukCuk.APIs\DemoAPI\MISA.Core\bin\Debug\net5.0\MISA.Core.deps.json
+E:\nnnang\api\MISA.CukCuk.APIs\DemoAPI\MISA.Core\bin\Debug\net5.0\MISA.Core.dll
+E:\nnnang\api\MISA.CukCuk.APIs\DemoAPI\MISA.Core\bin\Debug\net5.0\ref\MISA.Core.dll
+E:\nnnang\api\MISA.CukCuk.APIs\DemoAPI\MISA.Core\bin\Debug\net5.0\MISA.Core.pdb
+E:\nnnang\api\MISA.CukCuk.APIs\DemoAPI\MISA.Core\obj\Debug\net5.0\MISA.Core.csprojAssemblyReference.cache
+E:\nnnang\api\MISA.CukCuk.APIs\DemoAPI\MISA.Core\obj\Debug\net5.0\MISA.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\nnnang\api\MISA.CukCuk.APIs\DemoAPI\MISA.Core\obj\Debug\net5.0\MISA.Core.AssemblyInfoInputs.cache
+E:\nnnang\api\MISA.CukCuk.APIs\DemoAPI\MISA.Core\obj\Debug\net5.0\MISA.Core.AssemblyInfo.cs
+E:\nnnang\api\MISA.CukCuk.APIs\DemoAPI\MISA.Core\obj\Debug\net5.0\MISA.Core.csproj.CoreCompileInputs.cache
+E:\nnnang\api\MISA.CukCuk.APIs\DemoAPI\MISA.Core\obj\Debug\net5.0\MISA.Core.dll
+E:\nnnang\api\MISA.CukCuk.APIs\DemoAPI\MISA.Core\obj\Debug\net5.0\ref\MISA.Core.dll
+E:\nnnang\api\MISA.CukCuk.APIs\DemoAPI\MISA.Core\obj\Debug\net5.0\MISA.Core.pdb

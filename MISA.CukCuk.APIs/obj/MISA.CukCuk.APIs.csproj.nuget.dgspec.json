@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\nnnang\\api\\MISA.CukCuk.APIs\\MISA.CukCuk.APIs\\MISA.CukCuk.APIs.csproj": {}
+    "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.CukCuk.APIs\\MISA.CukCuk.APIs.csproj": {}
   },
   "projects": {
-    "E:\\nnnang\\api\\MISA.CukCuk.APIs\\MISA.CukCuk.APIs\\MISA.CukCuk.APIs.csproj": {
+    "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.Core\\MISA.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\nnnang\\api\\MISA.CukCuk.APIs\\MISA.CukCuk.APIs\\MISA.CukCuk.APIs.csproj",
-        "projectName": "MISA.CukCuk.APIs",
-        "projectPath": "E:\\nnnang\\api\\MISA.CukCuk.APIs\\MISA.CukCuk.APIs\\MISA.CukCuk.APIs.csproj",
+        "projectUniqueName": "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.Core\\MISA.Core.csproj",
+        "projectName": "MISA.Core",
+        "projectPath": "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.Core\\MISA.Core.csproj",
         "packagesPath": "C:\\Users\\nnnang\\.nuget\\packages\\",
-        "outputPath": "E:\\nnnang\\api\\MISA.CukCuk.APIs\\MISA.CukCuk.APIs\\obj\\",
+        "outputPath": "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,6 +32,71 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.CukCuk.APIs\\MISA.CukCuk.APIs.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.CukCuk.APIs\\MISA.CukCuk.APIs.csproj",
+        "projectName": "MISA.CukCuk.APIs",
+        "projectPath": "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.CukCuk.APIs\\MISA.CukCuk.APIs.csproj",
+        "packagesPath": "C:\\Users\\nnnang\\.nuget\\packages\\",
+        "outputPath": "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.CukCuk.APIs\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\nnnang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.Core\\MISA.Core.csproj": {
+                "projectPath": "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.Core\\MISA.Core.csproj"
+              },
+              "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.Infrastructure\\MISA.Infrastructure.csproj": {
+                "projectPath": "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.Infrastructure\\MISA.Infrastructure.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -71,6 +136,68 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.Infrastructure\\MISA.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.Infrastructure\\MISA.Infrastructure.csproj",
+        "projectName": "MISA.Infrastructure",
+        "projectPath": "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.Infrastructure\\MISA.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\nnnang\\.nuget\\packages\\",
+        "outputPath": "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\nnnang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.Core\\MISA.Core.csproj": {
+                "projectPath": "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.Core\\MISA.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

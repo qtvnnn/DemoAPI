@@ -93,6 +93,29 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "MISA.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/MISA.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MISA.Core.dll": {}
+        }
+      },
+      "MISA.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "MISA.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MISA.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MISA.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -252,11 +275,23 @@
         "swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "MISA.Core/1.0.0": {
+      "type": "project",
+      "path": "../MISA.Core/MISA.Core.csproj",
+      "msbuildProject": "../MISA.Core/MISA.Core.csproj"
+    },
+    "MISA.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../MISA.Infrastructure/MISA.Infrastructure.csproj",
+      "msbuildProject": "../MISA.Infrastructure/MISA.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "Dapper >= 2.0.90",
+      "MISA.Core >= 1.0.0",
+      "MISA.Infrastructure >= 1.0.0",
       "MySqlConnector >= 1.3.8",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
@@ -268,11 +303,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\nnnang\\api\\MISA.CukCuk.APIs\\MISA.CukCuk.APIs\\MISA.CukCuk.APIs.csproj",
+      "projectUniqueName": "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.CukCuk.APIs\\MISA.CukCuk.APIs.csproj",
       "projectName": "MISA.CukCuk.APIs",
-      "projectPath": "E:\\nnnang\\api\\MISA.CukCuk.APIs\\MISA.CukCuk.APIs\\MISA.CukCuk.APIs.csproj",
+      "projectPath": "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.CukCuk.APIs\\MISA.CukCuk.APIs.csproj",
       "packagesPath": "C:\\Users\\nnnang\\.nuget\\packages\\",
-      "outputPath": "E:\\nnnang\\api\\MISA.CukCuk.APIs\\MISA.CukCuk.APIs\\obj\\",
+      "outputPath": "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.CukCuk.APIs\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -292,7 +327,14 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.Core\\MISA.Core.csproj": {
+              "projectPath": "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.Core\\MISA.Core.csproj"
+            },
+            "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.Infrastructure\\MISA.Infrastructure.csproj": {
+              "projectPath": "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.Infrastructure\\MISA.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
