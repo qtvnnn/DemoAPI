@@ -23,8 +23,7 @@ namespace MISA.Core.Services
 
         public T GetById(Guid entityId)
         {
-
-            throw new NotImplementedException();
+            return _baseRepository.GetById(entityId);
         }
 
         public int Insert(T entity)
@@ -32,8 +31,7 @@ namespace MISA.Core.Services
             //Validate nghiệp vụ
             Validate();
             //thực hiện nghiệp vụ
-            _baseRepository.Insert(entity);
-            throw new NotImplementedException();
+            return _baseRepository.Insert(entity);
         }
 
         public int Update(T entity, Guid entityId)

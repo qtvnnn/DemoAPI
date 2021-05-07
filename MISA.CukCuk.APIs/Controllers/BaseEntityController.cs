@@ -53,17 +53,9 @@ namespace MISA.CukCuk.APIs.Controllers
         /// <returns>Thông tin của 1 đối tượng</returns>
         /// CreatedBy: NNNang (04/05/2021)
         [HttpGet("{id}")]
-        public IActionResult Get(string id)
+        public IActionResult Get(Guid id)
         {
-            //Thực hiện lấy dữ liệu từ DB
-            var storeName = $"Proc_Get{_tableName}ById";
-
-            DynamicParameters dynamicParameters = new DynamicParameters();
-            var storeCustomerId = $"@{_tableName}Id";
-            dynamicParameters.Add(storeCustomerId, id);
-
-            var customer = _dbConnection.Query<T>(storeName, param: dynamicParameters, commandType: CommandType.StoredProcedure).FirstOrDefault();
-
+            var customer = _baseService.GetById(id);
             if (customer == null)
             {
                 return StatusCode(204, customer);
