@@ -1,5 +1,6 @@
 ﻿using Dapper;
 using MISA.Core.Interfaces;
+using MISA.CukCuk.APIs.Result;
 using MySqlConnector;
 using System;
 using System.Collections.Generic;
@@ -33,32 +34,53 @@ namespace MISA.Infrastructure.Repository
             var storeName = $"Proc_Get{_tableName}ById";
 
             DynamicParameters dynamicParameters = new DynamicParameters();
-            var storeCustomerId = $"@{_tableName}Id";
-            dynamicParameters.Add(storeCustomerId, entityId);
+            var storeEntityId = $"@{_tableName}Id";
+            dynamicParameters.Add(storeEntityId, entityId);
 
             var entity = _dbConnection.Query<T>(storeName, param: dynamicParameters, commandType: CommandType.StoredProcedure).FirstOrDefault();
 
             return entity;
         }
 
-        public int Insert(T entity)
+        public ResponeResult Insert(T entity)
         {
+            var res = new ResponeResult();
+
             //Thực hiện lấy dữ liệu từ DB
             var storeName = $"Proc_Insert{_tableName}";
             var storeParam = entity;
-            var row = _dbConnection.Execute(storeName, param: storeParam, commandType: CommandType.StoredProcedure);
+            _dbConnection.Execute(storeName, param: storeParam, commandType: CommandType.StoredProcedure);
 
-            return row;
+            return res;
         }
 
+
+        // đang lỗi update
         public int Update(T entity, Guid entityId)
         {
-            throw new NotImplementedException();
+            //customer.CustomerId = customerId;
+            //Thực hiện lấy dữ liệu từ DB
+            var storeName = $"Proc_Update{_tableName}";
+
+            DynamicParameters dynamicParameters = new DynamicParameters();
+            var storeEntity = $"@{_tableName}";
+            var storeEntityId = $"@{_tableName}Id";
+
+            dynamicParameters.Add(storeEntity, entity);
+            dynamicParameters.Add(storeEntityId, entity);
+
+            return _dbConnection.Execute(storeName, param: dynamicParameters, commandType: CommandType.StoredProcedure);
         }
 
-        public int Delete(Guid entityId)
+        public int Delete(string entityId)
         {
-            throw new NotImplementedException();
+            //Thực hiện xóa dữ liệu từ DB
+            var storeName = $"Proc_Delete{_tableName}";
+
+            DynamicParameters dynamicParameters = new DynamicParameters();
+            var storeEntityId = $"@{_tableName}Id";
+            dynamicParameters.Add(storeEntityId, entityId);
+            return _dbConnection.Execute(storeName, param: dynamicParameters, commandType: CommandType.StoredProcedure);
         }
     }
 }

@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.CukCuk.APIs\\MISA.CukCuk.APIs.csproj": {}
+    "E:\\desktop2904\\MISA\\C#\\DemoAPI\\MISA.CukCuk.APIs\\MISA.CukCuk.APIs.csproj": {}
   },
   "projects": {
-    "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.Core\\MISA.Core.csproj": {
+    "E:\\desktop2904\\MISA\\C#\\DemoAPI\\MISA.Core\\MISA.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.Core\\MISA.Core.csproj",
+        "projectUniqueName": "E:\\desktop2904\\MISA\\C#\\DemoAPI\\MISA.Core\\MISA.Core.csproj",
         "projectName": "MISA.Core",
-        "projectPath": "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.Core\\MISA.Core.csproj",
-        "packagesPath": "C:\\Users\\nnnang\\.nuget\\packages\\",
-        "outputPath": "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.Core\\obj\\",
+        "projectPath": "E:\\desktop2904\\MISA\\C#\\DemoAPI\\MISA.Core\\MISA.Core.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "E:\\desktop2904\\MISA\\C#\\DemoAPI\\MISA.Core\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\nnnang\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -62,21 +58,17 @@
         }
       }
     },
-    "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.CukCuk.APIs\\MISA.CukCuk.APIs.csproj": {
+    "E:\\desktop2904\\MISA\\C#\\DemoAPI\\MISA.CukCuk.APIs\\MISA.CukCuk.APIs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.CukCuk.APIs\\MISA.CukCuk.APIs.csproj",
+        "projectUniqueName": "E:\\desktop2904\\MISA\\C#\\DemoAPI\\MISA.CukCuk.APIs\\MISA.CukCuk.APIs.csproj",
         "projectName": "MISA.CukCuk.APIs",
-        "projectPath": "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.CukCuk.APIs\\MISA.CukCuk.APIs.csproj",
-        "packagesPath": "C:\\Users\\nnnang\\.nuget\\packages\\",
-        "outputPath": "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.CukCuk.APIs\\obj\\",
+        "projectPath": "E:\\desktop2904\\MISA\\C#\\DemoAPI\\MISA.CukCuk.APIs\\MISA.CukCuk.APIs.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "E:\\desktop2904\\MISA\\C#\\DemoAPI\\MISA.CukCuk.APIs\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\nnnang\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -90,11 +82,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.Core\\MISA.Core.csproj": {
-                "projectPath": "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.Core\\MISA.Core.csproj"
+              "E:\\desktop2904\\MISA\\C#\\DemoAPI\\MISA.Core\\MISA.Core.csproj": {
+                "projectPath": "E:\\desktop2904\\MISA\\C#\\DemoAPI\\MISA.Core\\MISA.Core.csproj"
               },
-              "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.Infrastructure\\MISA.Infrastructure.csproj": {
-                "projectPath": "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.Infrastructure\\MISA.Infrastructure.csproj"
+              "E:\\desktop2904\\MISA\\C#\\DemoAPI\\MISA.Infrastructure\\MISA.Infrastructure.csproj": {
+                "projectPath": "E:\\desktop2904\\MISA\\C#\\DemoAPI\\MISA.Infrastructure\\MISA.Infrastructure.csproj"
               }
             }
           }
@@ -144,21 +136,17 @@
         }
       }
     },
-    "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.Infrastructure\\MISA.Infrastructure.csproj": {
+    "E:\\desktop2904\\MISA\\C#\\DemoAPI\\MISA.Infrastructure\\MISA.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.Infrastructure\\MISA.Infrastructure.csproj",
+        "projectUniqueName": "E:\\desktop2904\\MISA\\C#\\DemoAPI\\MISA.Infrastructure\\MISA.Infrastructure.csproj",
         "projectName": "MISA.Infrastructure",
-        "projectPath": "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.Infrastructure\\MISA.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\nnnang\\.nuget\\packages\\",
-        "outputPath": "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.Infrastructure\\obj\\",
+        "projectPath": "E:\\desktop2904\\MISA\\C#\\DemoAPI\\MISA.Infrastructure\\MISA.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "E:\\desktop2904\\MISA\\C#\\DemoAPI\\MISA.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\nnnang\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -172,8 +160,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.Core\\MISA.Core.csproj": {
-                "projectPath": "E:\\nnnang\\api\\MISA.CukCuk.APIs\\DemoAPI\\MISA.Core\\MISA.Core.csproj"
+              "E:\\desktop2904\\MISA\\C#\\DemoAPI\\MISA.Core\\MISA.Core.csproj": {
+                "projectPath": "E:\\desktop2904\\MISA\\C#\\DemoAPI\\MISA.Core\\MISA.Core.csproj"
               }
             }
           }

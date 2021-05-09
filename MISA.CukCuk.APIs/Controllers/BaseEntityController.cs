@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MISA.Core.Interfaces;
+using MISA.CukCuk.APIs.Result;
 using MySqlConnector;
 using System;
 using System.Collections.Generic;
@@ -15,16 +16,11 @@ namespace MISA.CukCuk.APIs.Controllers
     [ApiController]
     public abstract class BaseEntityController<T> : ControllerBase
     {
-        protected string _tableName = string.Empty;
-        protected string _connectionString = "Host=47.241.69.179; Port=3306; User Id= dev; Password=12345678; Database= MF0_NVManh_CukCuk02";
-        protected IDbConnection _dbConnection;
         IBaseService<T> _baseService;
 
         public BaseEntityController(IBaseService<T> baseService)
         {
             _baseService = baseService;
-            _tableName = typeof(T).Name;
-            _dbConnection = new MySqlConnection(_connectionString);
         }
 
         /// <summary>
@@ -34,36 +30,48 @@ namespace MISA.CukCuk.APIs.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            var entities = _baseService.Get();
-            if (entities.Count() == 0)
+            var res = new ResponeResult();
+            try
             {
-                return StatusCode(204, entities);
+                res.Data = _baseService.Get();
             }
-            else
+            catch (Exception ex)
             {
-                return StatusCode(200, entities);
+                res.OnException(res, ex);
             }
+            return StatusCode(200, res);
         }
 
 
         /// <summary>
         /// lấy dữ liệu theo khóa chính
         /// </summary>
-        /// <param name="CustomerId">Id của bảng dữ liệu</param>
+        /// <param name="id">Id của bảng dữ liệu</param>
         /// <returns>Thông tin của 1 đối tượng</returns>
         /// CreatedBy: NNNang (04/05/2021)
         [HttpGet("{id}")]
-        public IActionResult Get(Guid id)
+        public IActionResult Get(string id)
         {
-            var customer = _baseService.GetById(id);
-            if (customer == null)
+            var res = new ResponeResult();
+            try
             {
-                return StatusCode(204, customer);
+                Guid.TryParse(id, out Guid entityId);
+                if (entityId != null && entityId != Guid.Empty)
+                {
+                    res.Data = _baseService.GetById(entityId);
+                }
+                else
+                {
+                    res.OnBadRequest(res);
+                    return BadRequest(res);
+                }
             }
-            else
+            catch (Exception ex)
             {
-                return StatusCode(200, customer);
+                res.OnException(res, ex);
+                return StatusCode(500, res);
             }
+            return StatusCode(200, res);
         }
 
         /// <summary>
@@ -78,13 +86,24 @@ namespace MISA.CukCuk.APIs.Controllers
         [HttpPost]
         public IActionResult Post(T entity)
         {
-            //Validate dữ liệu
-            ValidateData(entity);
-            //Thực hiện lấy dữ liệu từ DB
-            var storeName = $"Proc_Insert{_tableName}";
-            var storeParam = entity;
-            var row = _dbConnection.Execute(storeName, param: storeParam, commandType: CommandType.StoredProcedure);
+            var res = new ResponeResult();
+            try
+            {
+                res = _baseService.Insert(entity);
+            }
+            catch (Exception ex)
+            {
+                res.OnException(res, ex);
+                return StatusCode(500, res);
+            }
 
+            return StatusCode(201, res);
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult Put(T entity, Guid id)
+        {
+            var row = _baseService.Update(entity, id);
             if (row == 0)
             {
                 return StatusCode(204, entity);
@@ -95,9 +114,31 @@ namespace MISA.CukCuk.APIs.Controllers
             }
         }
 
-        protected virtual void ValidateData(T entity)
+        [HttpDelete("{id}")]
+        public IActionResult Delete(string id)
         {
+            var res = new ResponeResult();
+            try
+            {
+                Guid.TryParse(id, out Guid entityId);
+                if (entityId != null && entityId != Guid.Empty)
+                {
+                    var row = _baseService.Delete(id);
+                }
+                else
+                {
+                    res.OnBadRequest(res);
+                    return BadRequest(res);
+                }
+            }
+            catch (Exception ex)
+            {
+                res.OnException(res, ex);
+                return StatusCode(500, res);
+            }
 
+            return StatusCode(200, res);
         }
+
     }
 }

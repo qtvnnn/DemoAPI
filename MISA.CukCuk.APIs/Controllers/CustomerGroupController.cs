@@ -18,16 +18,5 @@ namespace MISA.CukCuk.APIs.Controllers
         {
         }
 
-        [HttpPut("{customerId}")]
-        public IActionResult Put(CustomerGroup customerGroup, Guid customerId)
-        {
-            return StatusCode(200);
-        }
-
-        [HttpDelete("{customerId}")]
-        public IActionResult Delete(Guid customerId)
-        {
-            return StatusCode(200);
-        }
     }
 }

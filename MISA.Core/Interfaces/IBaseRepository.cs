@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MISA.CukCuk.APIs.Result;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -30,7 +31,7 @@ namespace MISA.Core.Interfaces
         /// </summary>
         /// <param name="entity"></param>
         /// <returns></returns>
-        int Insert(T entity);
+        ResponeResult Insert(T entity);
         /// <summary>
         /// Cập nhật
         /// </summary>
@@ -43,6 +44,6 @@ namespace MISA.Core.Interfaces
         /// </summary>
         /// <param name="entityId"></param>
         /// <returns></returns>
-        int Delete(Guid entityId);
+        int Delete(string entityId);
     }
 }

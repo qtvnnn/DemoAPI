@@ -10,3 +10,17 @@ E:\nnnang\api\MISA.CukCuk.APIs\DemoAPI\MISA.Core\obj\Debug\net5.0\MISA.Core.cspr
 E:\nnnang\api\MISA.CukCuk.APIs\DemoAPI\MISA.Core\obj\Debug\net5.0\MISA.Core.dll
 E:\nnnang\api\MISA.CukCuk.APIs\DemoAPI\MISA.Core\obj\Debug\net5.0\ref\MISA.Core.dll
 E:\nnnang\api\MISA.CukCuk.APIs\DemoAPI\MISA.Core\obj\Debug\net5.0\MISA.Core.pdb
+E:\desktop2904\MISA\C#\DemoAPI\MISA.Core\obj\Debug\net5.0\MISA.Core.csprojAssemblyReference.cache
+E:\desktop2904\MISA\C#\DemoAPI\MISA.Core\obj\Debug\net5.0\MISA.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\desktop2904\MISA\C#\DemoAPI\MISA.Core\obj\Debug\net5.0\MISA.Core.AssemblyInfoInputs.cache
+E:\desktop2904\MISA\C#\DemoAPI\MISA.Core\obj\Debug\net5.0\MISA.Core.AssemblyInfo.cs
+E:\desktop2904\MISA\C#\DemoAPI\MISA.Core\obj\Debug\net5.0\MISA.Core.csproj.CoreCompileInputs.cache
+E:\desktop2904\MISA\C#\DemoAPI\MISA.Core\obj\Debug\net5.0\MISA.Core.dll
+E:\desktop2904\MISA\C#\DemoAPI\MISA.Core\obj\Debug\net5.0\ref\MISA.Core.dll
+E:\desktop2904\MISA\C#\DemoAPI\MISA.Core\obj\Debug\net5.0\MISA.Core.pdb
+E:\desktop2904\MISA\C#\DemoAPI\MISA.Core\bin\Debug\net5.0\MISA.Core.deps.json
+E:\desktop2904\MISA\C#\DemoAPI\MISA.Core\bin\Debug\net5.0\MISA.Core.dll
+E:\desktop2904\MISA\C#\DemoAPI\MISA.Core\bin\Debug\net5.0\ref\MISA.Core.dll
+E:\desktop2904\MISA\C#\DemoAPI\MISA.Core\bin\Debug\net5.0\MISA.Core.pdb
+E:\desktop2904\MISA\C#\DemoAPI\MISA.Core\obj\Debug\net5.0\MISA.Core.Resource.Message.resources
+E:\desktop2904\MISA\C#\DemoAPI\MISA.Core\obj\Debug\net5.0\MISA.Core.csproj.GenerateResource.cache
